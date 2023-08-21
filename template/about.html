@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+# title block------
+{% block title %}  about {% endblock title %}
+
+#body block-----------------
+{% block body %}
+
+
+
+
+<div class="album py-3" style="background: rgb(34,53,195);background: linear-gradient(222deg, rgba(34,53,195,0.865983893557423) 0%, rgba(253,100,45,0.742734593837535) 100%);">
+
+    <h2 class="about py-4" style=" text-align:center;font-weight:bold;text-shadow: -3px 2px 32px #FF0000;color:white;font-size:45px">About Me</h2>
+    <div class="container" style="background: rgb(227,210,210);background: linear-gradient(49deg, rgba(227,210,210,1) 0%, rgba(29,169,253,1) 50%, rgba(252,176,69,1) 100%);">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="box-shadow: 3px 5px 38px 23px #88888F;    border-radius: 18px;">
+        <div class="col" style="    width: -webkit-fill-available;">
+          <div class="card shadow-sm" style="background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+          <div class="container" style="margin-top:30px;display:flex;justify-content:center">
+            <img src="/static/img/ak.jpg" height="300px" width="300px"    class="d-block" alt="..." style="border-radius:50%;    box-shadow: 109px 19px 116px 29px #88888F;">
+          </div>
+              <div class="container" style="padding:20px">
+              <p style="font-size:40px;font-weight:bold;display:flex; justify-content:center">Akash Kumar</p>
+              </div>
+
+              <div class="card-body"style="padding:20px">
+              <p class="card-text" style="font-size:18px;background: rgb(3,0,38);background: linear-gradient(180deg, rgba(3,0,38,1) 0%, rgba(107,99,252,1) 100%); font-family:monospace;padding:20px;color:white"><strong style="font-size:25px;">Welcome to my Portfolio!<br><br></strong>
+I am a passionate and dedicated individual who has completed my graduation in <strong>BCA and pursued PGDCA.</strong><br><br> Currently, I am actively pursuing my <strong>MCA degree.</strong> Throughout my academic journey, I have gained proficiency in various programming languages such as <strong>Python, HTML, and CSS.</strong><br><br> I also possess a solid understanding of <strong>MySQL</strong>, which enables me to effectively work with databases.
+                  <br><br>With a keen interest in <strong>Data Analysis and Statistics</strong>, I have developed a foundational knowledge in this field. <br><br>Utilizing my skills, I have created this website using the powerful Django framework. The objective behind the creation of this website is to raise awareness about my work and expertise, as well as to showcase my abilities as a <strong>Python developer and data analyst</strong>.
+<strong>I aspire to secure an internship opportunity that will allow me to further enhance my skills and knowledge in the field of Python development and data analysis.</strong> By gaining practical experience in a professional setting.<br><br>I aim to refine my abilities and contribute to meaningful projects. I am enthusiastic about taking on challenges and constantly learning to stay at the forefront of technological advancements.
+
+Thank you for visiting my website, and I look forward to connecting with like-minded individuals and organizations who share a passion for Python development and data analysis. Together, we can make a positive impact in the world of technology.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!--....................................................footer........................................!-->
+<!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, fotter ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,!-->
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/akash_kumar_kashyap?igshid=OGQ5ZDc2ODk2ZA==" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/akash-kumar-72b645207/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+    </section>
+
+
+    <section class="mb-4">
+      <p>
+       "Your Vision, My Expertise, a Powerful Combination."<br>"Designing the future, pixel by pixel."
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="row-lg-3 row-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">AKASH KUMAR</h5>
+          <ul class="list-unstyled mb-0">
+
+            <li>
+              <a href="/" class="text-white" ><i class="fa-solid fa-house fa-flip"style="margin-bottom:20px;font-size:20px"></i></a>
+            </li>
+            <li>
+              <a href="/contact" class="text-white"><i class="fa-solid fa-phone fa-flip"style="margin-bottom:20px;font-size:20px"></i></a>
+            </li>
+            <li>
+              <a href="/about" class="text-white"><i class="fa-solid fa-person fa-flip"style="font-size:25px"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://www.linkedin.com/in/akash-kumar-72b645207/"> AKASH KUMAR</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+{% endblock body %}

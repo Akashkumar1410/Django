@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+# title block------
+{% block title %}  contact {% endblock title %}
+
+#body block-----------------
+{% block body %}
+<div class="container-fluid px-0">
+<img src="/static/img/phone1.avif"width="300" height=600" class="d-block w-100 my-o" alt="...">
+</div>
+<!-- ..........container of submit form---------------!-->
+<div class="container" style="box-shadow: 1px 59px 500px #ff8ded;background: rgb(255,200,255);background: linear-gradient(292deg, rgba(255,200,255,1) 0%, rgba(133,255,250,1) 100%);">
+    <h1 style="text-align:center;font-weight:bold;color:white;text-shadow: -3px 2px 32px #FF0000;margin-top:30px;font-size:40px">Contact Me</h1>
+    <!--.............form.................!-->
+    <form method="post" action="/contact" style="padding-bottom:40px;margin-bottom:0px">
+    {% csrf_token %}
+   <div class="mb-3">
+  <label for="name" style="font-weight:bold;font-size:20px;text-shadow: -3px 2px 20px black">Name</label>
+  <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" style="border-image: linear-gradient(to right, white,red,green,pink,hotpink,blue,darkblue,black,purple, #401dee) 1;border-width:2px;background: rgb(255,207,250);background: linear-gradient(292deg, rgba(255,207,250,1) 0%, rgba(133,255,245,1) 100%);">
+</div>
+<div class="mb-3">
+  <label for="email"style="font-weight:bold;font-size:20px;text-shadow: -3px 2px 20px black">Email Address</label>
+  <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your email Address" style="border-image: linear-gradient(to right, white,red,green,pink,hotpink,blue,darkblue,black,purple, #401dee) 1;border-width:2px;background: rgb(255,207,250);background: linear-gradient(292deg, rgba(255,207,250,1) 0%, rgba(133,255,245,1) 100%);">
+</div>
+<div class="mb-3">
+  <label for="phone"style="font-weight:bold;font-size:20px;text-shadow: -3px 2px 20px black">Phone Number</label>
+  <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Mobile Number" style="border-image: linear-gradient(to right, white,red,green,pink,hotpink,blue,darkblue,black,purple, #401dee) 1;border-width:2px;background: rgb(255,207,250);background: linear-gradient(292deg, rgba(255,207,250,1) 0%, rgba(133,255,245,1) 100%);">
+</div>
+    <div class="mb-3">
+  <label for="desc" class="form-label"style="font-weight:bold;font-size:20px;text-shadow: -3px 2px 20px black">Tell me About what you want contact for</label>
+  <textarea class="form-control" id="desc" rows="3" name="desc" placeholder="Desc" style="border-image: linear-gradient(to left, white,red,green,,pink,hotpink,blue,darkblue,black,purple, #401dee) 1;border-width:2px;  background: rgb(255,207,250);background: linear-gradient(292deg, rgba(255,207,250,1) 0%, rgba(133,255,245,1) 100%);"></textarea>
+</div>
+        <div class="container mt-5" style="text-align:center">
+<button type="submit" class="btn btn-dark " style="padding: 20px;font-size: 20px;font-weight: bold;padding-right: 30px;
+    padding-left: 30px;" >Send</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+<!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, fotter ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,!-->
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/akash_kumar_kashyap?igshid=OGQ5ZDc2ODk2ZA==" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/akash-kumar-72b645207/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+    </section>
+
+
+    <section class="mb-4">
+      <p>
+       "Your Vision, My Expertise, a Powerful Combination."<br>"Designing the future, pixel by pixel."
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="row-lg-3 row-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">AKASH KUMAR</h5>
+          <ul class="list-unstyled mb-0">
+
+            <li>
+              <a href="/" class="text-white" ><i class="fa-solid fa-house fa-flip"style="margin-bottom:20px;font-size:20px"></i></a>
+            </li>
+            <li>
+              <a href="/contact" class="text-white"><i class="fa-solid fa-phone fa-flip"style="margin-bottom:20px;font-size:20px"></i></a>
+            </li>
+            <li>
+              <a href="/about" class="text-white"><i class="fa-solid fa-person fa-flip"style="font-size:25px"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://www.linkedin.com/in/akash-kumar-72b645207/"> AKASH KUMAR</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+{% endblock body %}
